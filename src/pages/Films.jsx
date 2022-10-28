@@ -14,9 +14,9 @@ export default function Films() {
                 {filmes.map(film => {
                 return(
                   film.id % 2 == 0 ? 
-                  <>
+                  <div className='row mt-5 align-items-center'>
                   <FilmesSlider key={film.id} film={film} />
-                  <div className="details text-white-50 col-md-6  mt-5 ps-5">
+                  <div className="details text-white-50 col-md-6">
                       <p>Film Name : {film.filmeName}</p>
                       <p>Director : {film.director}</p>
                       <p>Duration : {film.duration}</p>                  
@@ -24,10 +24,10 @@ export default function Films() {
                       <p>About the film  : {film.aboutFilme}</p>
                       </div> 
                       <div className="line col-12"></div>
-                      </>
+                      </div>
                       
-                      : <>
-                      <div className="details text-white-50 col-md-6 mt-3 pe-5" >
+                      : <div className='row mt-5 align-items-center'>
+                      <div className="details text-white-50 col-md-6" >
                       <p className=''>Film Name : {film.filmeName}</p>
                       <p>Director : {film.director}</p>
                       <p>Duration : {film.duration}</p>                  
@@ -54,7 +54,7 @@ export default function Films() {
   </div>
   </div>
   <div className="line col-12"></div>
-                      </>
+                      </div>
                   )   
                 })}
             </div>

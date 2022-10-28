@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FilmesSlider({film}) {
   return (
-    <div className="filmesSlider col-md-6 mt-5">
+    <div className="filmesSlider col-md-6">
                   <div
     id="carouselExampleSlidesOnly"
     className="carousel slide"

@@ -26,11 +26,31 @@ export default function Contact() {
          </div>
           </div>
           <div className="right col-12 col-md-4 ">
-            <form className='p-5'>
-              <input type="text" placeholder='Full Name' className='inputField' /><br />
-              <input type="text" placeholder='Email Address' className='inputField' /><br />
-              <textarea type="text" placeholder='Message' className='inputField w-75' /><br />
-              <input type="submit" value="Submit" className='bg-dark text-white rounded-5 fs-6 px-5 d-block ms-auto mt-5' />
+            <form className='ms-5 mt-5 ms-sm-0'>
+              {/* <input type="text" placeholder='Full Name' className='inputField' /><br /> */}
+              <div class="form-floating mb-3">
+  <input type="text" className="form-control  input-under-line" id="floatingInput" placeholder="name@example.com" />
+  <label className='text-black-50' for="floatingInput">Full Name</label>
+</div>
+              <div class="form-floating mb-3">
+  <input type="email" className="form-control  input-under-line" id="floatingInput1" placeholder="name@example.com" />
+  <label className='text-black-50' for="floatingInput1">Email address</label>
+</div>
+<div className="form-floating">
+  <textarea type="text" className="form-control input-under-line" id="txtarea" placeholder="Password" />
+  <label className='text-black-50' for="txtarea">Message</label>
+</div>
+              {/* <input type="text" placeholder='Email Address' className='inputField' /><br />
+              <textarea type="text" placeholder='Message' className='inputField w-75' /><br /> */}
+              <input type="submit" value="Submit" className='bg-dark text-white rounded-5 fs-6 px-5 d-block mx-auto mt-5 mb-sm-5' />
+              {/* <div class="form-floating mb-3">
+  <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
+  <label for="floatingInput">Email address</label>
+</div>
+<div className="form-floating">
+  <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
+  <label for="floatingPassword">Password</label>
+</div> */}
             </form>
           </div>
         </div>

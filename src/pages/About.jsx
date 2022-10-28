@@ -1,11 +1,11 @@
 import React from 'react'
-
+import aboutUs from "../../public/images/about us - img 1.png"
 export default function About() {
   return (
     <section className='bg-white padding'>
         <div className="row justify-content-center w-75 mx-auto bg-black text-white align-items-center p-4 rounded-4" >
             <div className="left-img col-12 col-md-4">
-                <img src="public\images\about us - img 1.png" alt="team-img" />
+                <img src={aboutUs} alt="team-img" />
             </div>
             <div className="right-txt col-12 col-md-6">
                 <h2>About us</h2>

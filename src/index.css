@@ -305,6 +305,17 @@ object-fit: cover;
   
 } 
 
+.input-under-line{
+  border:none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  resize: none;
+}
+.input-under-line:focus{
+  box-shadow: 0 0 10px gray;
+  border-radius: 5px;
+  border-color:transparent;
+}
 @media screen and (max-width:768px) {
   .line{
     display: block;
